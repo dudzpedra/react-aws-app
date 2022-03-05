@@ -1,17 +1,24 @@
-import './App.css';
+import "./App.css";
+import Item from "./components/Item";
 
 function App() {
+  const link1 = "https://github.com/dudzpedra/react-aws-app";
+  const link2 =
+    "https://aws.amazon.com/pt/getting-started/hands-on/deploy-react-app-cicd-amplify/";
+
   return (
     <div className="App">
       <h1>A simple React and AWS app.</h1>
-      <p>
-        Github Repo: {' '}
-        <a href='https://github.com/dudzpedra/react-aws-app' target='_blank' rel='noreferrer' >React AWS app</a>
-      </p>
-      <p>
-        Learn more: {' '}
-        <a href='https://aws.amazon.com/pt/getting-started/hands-on/deploy-react-app-cicd-amplify/' target='_blank' rel='noreferrer' >Deploy a React app with AWS</a>
-      </p>
+      <div>
+        <p>
+          Github Repo: <Item link={link1} text="React AWS App" />
+        </p>
+      </div>
+      <div>
+        <p>
+          Learn more: <Item link={link2} text="Deploy React App with AWS" />
+        </p>
+      </div>
     </div>
   );
 }
