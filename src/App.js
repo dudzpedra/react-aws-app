@@ -2,9 +2,6 @@ import "./App.css";
 import Item from "./components/Item";
 import { withAuthenticator } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css';
-import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
-Amplify.configure(config);
 
 function App({ user, signOut }) {
   const link1 = "https://github.com/dudzpedra/react-aws-app";
