@@ -89,7 +89,8 @@ function App({ user, signOut }) {
           Learn more: <Item link={link2} text="Deploy React App with AWS" />
         </p>
       </div>
-      <div>
+      <div className="noteForm">
+        <h2>Create Note</h2>
         <input
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder="Note name"
@@ -104,12 +105,15 @@ function App({ user, signOut }) {
         />
         <input type="file" onChange={onChange} />
         <button onClick={createNote}>Create Note</button>
-        <div style={{ marginBottom: 30 }}>
+        <h2>My Notes</h2>
+        <div className="notes">
           {notes.map((note) => (
-            <div key={note.id || note.name} className='note'>
+            <div key={note.id || note.name} className="note">
               <h2>{note.name}</h2>
               <p>{note.description}</p>
-              {note.image && <img alt="Note" src={note.image} className='noteImage' />}
+              {note.image && (
+                <img alt="Note" src={note.image} className="noteImage" />
+              )}
               <button onClick={() => deleteNote(note)}>Delete note</button>
             </div>
           ))}
