@@ -1,0 +1,14 @@
+{
+  "resourceName": "imgstorage",
+  "policyUUID": "f12cfa73",
+  "bucketName": "reactawsapp0349fbf784024df9bee6163027dfa8f9",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
