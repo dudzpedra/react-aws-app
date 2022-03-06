@@ -1,4 +1,4 @@
-# A simple React App with AWS Amplify deploy. Available at: https://main.di9sb9kb1g4fv.amplifyapp.com/
+# A simple React App with AWS Amplify deploy. Available at: https://main.d3a2ekw0jbv9n4.amplifyapp.com/
 
 ## Available Scripts
 
